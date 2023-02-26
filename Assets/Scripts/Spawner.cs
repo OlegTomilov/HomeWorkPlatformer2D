@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PointSpawnCoins : MonoBehaviour
+public class Spawner : MonoBehaviour
 {
     [SerializeField] private Coin _coin;
     [SerializeField] private Transform _spawn;

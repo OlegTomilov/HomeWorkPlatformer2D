@@ -23,7 +23,7 @@ public class EnemyGround : MonoBehaviour
         {
             int navigation = isMoveLeft ? 180 : 0;
             transform.eulerAngles = new Vector3(0, navigation, 0);
-            isMoveLeft = navigation == 0 ? true : false;
+            isMoveLeft = navigation == 0;
         }
     }
 }
