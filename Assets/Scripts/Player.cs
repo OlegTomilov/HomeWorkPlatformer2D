@@ -12,7 +12,7 @@ public class Player : MonoBehaviour
 
     private Animator _animator;
     private Rigidbody2D _rigidBody2D;
-    private bool isGround;
+    private bool _isGround;
 
     private void Start()
     {
@@ -27,12 +27,12 @@ public class Player : MonoBehaviour
 
     private void OnCollisionStay2D(Collision2D collision)
     {
-        isGround = true;
+        _isGround = true;
     }
 
     private void OnCollisionExit2D(Collision2D collision)
     {
-        isGround = false;
+        _isGround = false;
     }
 
     private void Move()
@@ -62,7 +62,7 @@ public class Player : MonoBehaviour
 
     private void Jump()
     {
-        if (isGround)
+        if (_isGround)
         {
             _rigidBody2D.AddForce(Vector2.up * _jumpForce);
         }

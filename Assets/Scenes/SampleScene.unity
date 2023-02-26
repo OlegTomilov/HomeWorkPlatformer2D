@@ -1954,7 +1954,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 482d51b448c0bea42b4e814b30422f9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _coin: {fileID: 710635799819450885, guid: 7b3744fa7808f9e4d8c64c44b1c54a3e, type: 3}
+  _coin: {fileID: 5676088756776704235, guid: 7b3744fa7808f9e4d8c64c44b1c54a3e, type: 3}
   _spawn: {fileID: 567483185}
   _timeSpawn: 2
 --- !u!1 &747367590

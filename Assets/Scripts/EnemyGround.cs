@@ -21,16 +21,9 @@ public class EnemyGround : MonoBehaviour
 
         if (groundInfo.collider == false)
         {
-            if (isMoveLeft)
-            {
-                transform.eulerAngles = new Vector3(0, 180, 0);
-                isMoveLeft = false;
-            }
-            else
-            {
-                transform.eulerAngles = new Vector3(0, 0, 0);
-                isMoveLeft = true;
-            }
+            int navigation = isMoveLeft ? 180 : 0;
+            transform.eulerAngles = new Vector3(0, navigation, 0);
+            isMoveLeft = navigation == 0 ? true : false;
         }
     }
 }
