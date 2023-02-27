@@ -5,6 +5,7 @@ using UnityEngine;
 public class Camera : MonoBehaviour
 {
     [SerializeField] private Transform _playerPosition;
+
     private float _speed = 3f;
     private float _cameraZPosition = -10f;
 
