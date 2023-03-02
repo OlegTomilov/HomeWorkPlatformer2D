@@ -10,8 +10,7 @@ public class Player : MonoBehaviour
     [SerializeField] private float _jumpForce;
 
     private Rigidbody2D _rigidBody2D;
-
-    private bool _isGround;
+    public bool IsGround;
 
     private void Start()
     {
@@ -21,16 +20,6 @@ public class Player : MonoBehaviour
     private void Update()
     {
         Move();
-    }
-
-    private void OnCollisionStay2D(Collision2D collision)
-    {
-        _isGround = true;
-    }
-
-    private void OnCollisionExit2D(Collision2D collision)
-    {
-        _isGround = false;
     }
 
     private void Move()
@@ -53,7 +42,8 @@ public class Player : MonoBehaviour
 
     private void Jump()
     {
-        if (_isGround)
+
+        if (IsGround)
         {
             _rigidBody2D.AddForce(Vector2.up * _jumpForce);
         }

@@ -9,7 +9,6 @@ public class Camera : MonoBehaviour
     private float _speed = 3f;
     private float _cameraZPosition = -10f;
 
-
     private void Start()
     {
         transform.position = new Vector3(_playerPosition.transform.position.x, _playerPosition.transform.position.y, _playerPosition.transform.position.z);

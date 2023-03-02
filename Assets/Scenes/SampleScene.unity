@@ -1676,6 +1676,7 @@ GameObject:
   - component: {fileID: 536576521}
   - component: {fileID: 536576520}
   - component: {fileID: 536576523}
+  - component: {fileID: 536576524}
   - component: {fileID: 536576522}
   m_Layer: 0
   m_Name: Player
@@ -1785,6 +1786,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _speed: 3
   _jumpForce: 15
+  IsGround: 0
 --- !u!50 &536576521
 Rigidbody2D:
   serializedVersion: 4
@@ -1834,6 +1836,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1de6219fe06f18a42afdf69cb1108089, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &536576524
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 536576516}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a1b5f7e444e3624a95d2a55ffef01f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _player: {fileID: 536576520}
 --- !u!1 &567483181
 GameObject:
   m_ObjectHideFlags: 0
